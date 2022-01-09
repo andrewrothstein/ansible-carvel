@@ -1,0 +1,17 @@
+---
+- hosts: all
+  vars:
+    carvel_apps:
+      - name: ytt
+        version: 0.38.0
+      - name: kbld
+        version: 0.32.0
+      - name: imgpkg
+        version: 0.24.0
+  roles:
+    - role: '{{ playbook_dir }}'
+  tasks:
+    - loop: '{{ carvel_apps | default([]) }}'
+      loop_control:
+        loop_var: carvel_app
+      include_tasks: test-app.yml

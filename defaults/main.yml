@@ -1,0 +1,16 @@
+---
+# defaults file for carvel
+
+# Carvel apps/versions to install
+#carvel_apps:
+#  - name: ytt
+#    version: 0.38.0
+#  - name: kblk
+#    version: 0.32.0
+
+carvel_os: linux
+carvel_arch: amd64
+carvel_mirror: https://github.com/vmware-tanzu
+carvel_install_dir: /usr/local/bin
+carvel_installer: dl
+carvel_elevate: true

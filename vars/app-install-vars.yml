@@ -1,0 +1,6 @@
+---
+carvel_app_mirror: '{{ carvel_mirror }}/carvel-{{ carvel_app.name }}/releases/download/v{{ carvel_app.version }}'
+carvel_app_url: '{{ carvel_app_mirror }}/{{ carvel_app.name }}-{{ carvel_platform }}'
+carvel_app_checksums_url: '{{ carvel_app_mirror }}/checksums.txt'
+carvel_app_exe: '{{ carvel_install_dir }}/{{ carvel_app.name }}-{{ carvel_platform }}-{{ carvel_app.version }}'
+carvel_app_link: '{{ carvel_install_dir }}/{{ carvel_app.name }}'

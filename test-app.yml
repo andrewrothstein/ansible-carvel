@@ -1,0 +1,6 @@
+---
+- command: /usr/local/bin/{{ carvel_app.name }} --version
+  register: test_output
+- name: '{{ carvel_app.name }} --version'
+  debug:
+    msg: '{{ test_output.stdout }}'

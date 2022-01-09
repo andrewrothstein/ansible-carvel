@@ -1,0 +1,3 @@
+---
+# vars file for carvel
+carvel_platform: '{{ carvel_os }}-{{ carvel_arch }}'
