@@ -8,6 +8,10 @@
         version: 0.32.0
       - name: imgpkg
         version: 0.24.0
+      - name: kapp
+        version: 0.46.0
+      - name: vendir
+        version: 0.25.0
   roles:
     - role: '{{ playbook_dir }}'
   tasks:
