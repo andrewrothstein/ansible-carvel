@@ -3,7 +3,7 @@
   vars:
     carvel_apps:
       - name: ytt
-        version: 0.40.1
+        version: 0.42.0
       - name: kbld
         version: 0.34.0
       - name: imgpkg
