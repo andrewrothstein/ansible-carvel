@@ -3,15 +3,15 @@
   vars:
     carvel_apps:
       - name: ytt
-        version: 0.42.0
+        version: 0.44.0
       - name: kbld
-        version: 0.34.0
+        version: 0.36.0
       - name: imgpkg
-        version: 0.28.0
+        version: 0.34.0
       - name: kapp
-        version: 0.50.0
+        version: 0.53.0
       - name: vendir
-        version: 0.27.0
+        version: 0.32.0
   roles:
     - role: '{{ playbook_dir }}'
   tasks:
