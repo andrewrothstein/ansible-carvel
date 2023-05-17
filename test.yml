@@ -9,7 +9,7 @@
       - name: imgpkg
         version: 0.36.0
       - name: kapp
-        version: 0.55.0
+        version: 0.56.0
       - name: vendir
         version: 0.33.1
   roles:
