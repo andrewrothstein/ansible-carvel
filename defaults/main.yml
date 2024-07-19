@@ -1,12 +1,12 @@
 ---
 # defaults file for carvel
 
-# Carvel apps/versions to install
-#carvel_apps:
-#  - name: ytt
-#    version: 0.38.0
-#  - name: kblk
-#    version: 0.32.0
+## Carvel apps/versions to install
+# carvel_apps:
+#   - name: ytt
+#     version: 0.38.0
+#   - name: kblk
+#     version: 0.32.0
 
 carvel_os: linux
 carvel_arch: amd64

@@ -1,19 +1,19 @@
 ---
-- name: resolving vars for {{ carvel_app.name }}:{{ carvel_app.version }}
-  include_vars:
+- name: Resolving vars for {{ carvel_app.name }}:{{ carvel_app.version }}
+  ansible.builtin.include_vars:
     file: app-install-vars.yml
-- name: downloading {{ carvel_app_url }} to {{ carvel_app_exe }}
+- name: Downloading {{ carvel_app_url }} to {{ carvel_app_exe }}
   become: '{{ carvel_elevate }}'
   become_user: root
-  get_url:
+  ansible.builtin.get_url:
     url: '{{ carvel_app_url }}'
     dest: '{{ carvel_app_exe }}'
-    mode: 0755
+    mode: '755'
     checksum: sha256:{{ carvel_app_checksums_url }}
-- name: linking {{ carvel_app_link }} to {{ carvel_app_exe }}
+- name: Linking {{ carvel_app_link }} to {{ carvel_app_exe }}
   become: '{{ carvel_elevate }}'
   become_user: root
-  file:
+  ansible.builtin.file:
     state: link
     src: '{{ carvel_app_exe }}'
     dest: '{{ carvel_app_link }}'
