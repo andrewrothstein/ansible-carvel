@@ -1,3 +1,5 @@
 ---
 # vars file for carvel
+carvel_os: '{{ ansible_facts["system"] | lower }}'
+carvel_arch: '{{ carvel_arch_map[ansible_facts["architecture"]] }}'
 carvel_platform: '{{ carvel_os }}-{{ carvel_arch }}'

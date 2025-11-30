@@ -8,8 +8,8 @@
 #   - name: kblk
 #     version: 0.32.0
 
-carvel_os: linux
-carvel_arch: amd64
+carvel_arch_map:
+  x86_64: amd64
 carvel_mirror: https://github.com/vmware-tanzu
 carvel_install_dir: /usr/local/bin
 carvel_installer: dl
